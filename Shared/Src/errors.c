@@ -15,6 +15,10 @@ void printErrorMessages(enum Errors error) {
             printf(" \nSTACK_IS_FULL");
         case STACK_IS_EMPTY:
             printf(" \nSTACK_IS_EMPTY");
+        case QUEUE_IS_FULL:
+            printf(" \nQUEUE_IS_FULL");
+        case QUEUE_IS_EMPTY:
+            printf(" \nQUEUE_IS_EMPTY");
         default:
             printf("UNDEFINED");
     }

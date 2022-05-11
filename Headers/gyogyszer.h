@@ -33,7 +33,6 @@ char *getTypeOfMedicin(enum TypeOfMedicine medicinetype);
 void createMedicin(Medicine **medicine);
 
 void SetMedicinData(Medicine *medicine,
-                    char *name,
                     enum MedicineType type,
                     enum TypeOfMedicine medicinetype
 );

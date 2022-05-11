@@ -40,7 +40,7 @@ void createMedicin(Medicine **medicine) {
 }
 
 
-void SetMedicinData(Medicine *medicine, char *name, enum MedicineType type, enum TypeOfMedicine medicinetype) {
+void SetMedicinData(Medicine *medicine, enum MedicineType type, enum TypeOfMedicine medicinetype) {
     medicine->type = type;
     medicine->medicinetype = medicinetype;
 }
