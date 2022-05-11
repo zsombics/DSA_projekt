@@ -6,6 +6,7 @@
 #include "../Headers/gyogyszerQueue.h"
 #include "../Shared/Header/errors.h"
 
+
 void createMedQueue(MedQueue **medQueue, unsigned int maxSize){
     (*medQueue) = malloc(sizeof(MedQueue));
     //test
@@ -40,7 +41,7 @@ void dequeue(MedQueue *medQueue){
         medQueue->Medicines[medQueue->front]=NULL;
         medQueue->front++;
     }
-    else printErrorMessages(QUEUE_IS_EMPTY);
+   else printErrorMessages(QUEUE_IS_EMPTY);
 }
 void deleteQueue(MedQueue **medQueue){
 

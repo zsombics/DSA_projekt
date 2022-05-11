@@ -5,7 +5,6 @@
 #ifndef HOSPITAL_PROJECT_GYOGYSZERQUEUE_H
 #define HOSPITAL_PROJECT_GYOGYSZERQUEUE_H
 #include "gyogyszer.h"
-#include "errors.h"
 
 typedef struct {
     Medicine **Medicines;
