@@ -4,7 +4,6 @@
 
 #include "../Headers/orvos.h"
 #include "../Shared/Header/errors.h"
-#include "../Shared/Header/constans.h"
 
 
 char *getSpecializationType(enum SpecializationType specialization) {

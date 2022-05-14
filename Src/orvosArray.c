@@ -3,9 +3,9 @@
 //
 
 #include "../Headers/orvosArray.h"
-#include "../Shared/Header/constans.h"
 #include "../Shared/Header/errors.h"
 #include <stdlib.h>
+#include <stdbool.h>
 
 void createStaffArray(StaffArray **staffArray, unsigned int maxDoctor) {
     *staffArray = (StaffArray *) malloc(sizeof(StaffArray));
@@ -35,7 +35,7 @@ void deleteStaffArray(StaffArray **staffArray) {
     }
 }
 
-bool addNewStaff(StaffArray *staffArray, Staff *newStaff) {
+bool addNewStaff(StaffArray *staffArray, Staff *newStaff,int staffposition) {
     if (staffArray != NULL && staffArray->maxDoctor > staffposition && staffposition >= 0 && newStaff != NULL) {
         staffArray->staffs[staffposition] = newStaff;
         staffposition++;
@@ -64,7 +64,7 @@ void readStaff(StaffArray *staffArray, char *from) {
         scanf("%i", &newStaff->specialization);
         scanf("%i", &newStaff->illness);
         scanf("%i%i%i\n", &newStaff->birthDate.year, &newStaff->birthDate.month, &newStaff->birthDate.day);
-        addNewStaff(staffArray, newStaff);
+        addNewStaff(staffArray, newStaff,i);
     }
     freopen(CON, "r", stdin);
 }

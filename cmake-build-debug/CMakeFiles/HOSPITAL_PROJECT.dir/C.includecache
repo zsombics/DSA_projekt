@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvos.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+../Shared/Header/constans.h
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/constans.h
+
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvosArray.h
+orvos.h
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvos.h
+stdbool.h
+-
+
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/constans.h
+
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/errors.h
+stdio.h
+-
+
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/orvosArray.c
+../Headers/orvosArray.h
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvosArray.h
+../Shared/Header/errors.h
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/errors.h
+stdlib.h
+-
+stdbool.h
+-
+

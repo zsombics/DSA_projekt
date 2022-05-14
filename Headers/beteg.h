@@ -54,7 +54,7 @@ void SetPatientData(Patient *patient,
                     enum PatientType type,
                     enum GenderTypePatient gender,
                     enum TypeOfIllness illness,
-                    enum IllnesSeriousness illnesSeriousness,StaffArray *S
+                    enum IllnesSeriousness illnesSeriousness,StaffArray *Saff
 );
 
 void printPatient(Patient *patient, char *destination);

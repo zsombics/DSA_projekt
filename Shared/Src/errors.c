@@ -1,7 +1,7 @@
 //
 // Created by zsomb on 4/20/2022.
 //
-
+#include <stdio.h>
 #include "../Header/errors.h"
 void printErrorMessages(enum Errors error) {
     switch (error) {

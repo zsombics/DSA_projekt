@@ -1,3 +1,3 @@
-C:/Users/zsomb/CLionProjects/HOSPITAL_PROJECT/cmake-build-debug/CMakeFiles/HOSPITAL_PROJECT.dir
-C:/Users/zsomb/CLionProjects/HOSPITAL_PROJECT/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/zsomb/CLionProjects/HOSPITAL_PROJECT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/CMakeFiles/HOSPITAL_PROJECT.dir
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/CMakeFiles/rebuild_cache.dir

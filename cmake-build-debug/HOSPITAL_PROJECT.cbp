@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HOSPITAL_PROJECT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HOSPITAL_PROJECT">
+				<Option output="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/HOSPITAL_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 HOSPITAL_PROJECT"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HOSPITAL_PROJECT/fast">
+				<Option output="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/HOSPITAL_PROJECT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 HOSPITAL_PROJECT/fast"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/MINGW-~1/X86_64~1.0-P/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/beteg.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/betegArray.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/gyogyszer.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/gyogyszerQueue.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvos.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Headers/orvosArray.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Header/Labmanager.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Header/lab1.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Header/lab2.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Src/Labmanager.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Src/lab1.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Manager/Src/lab2.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/constans.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/errors.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Header/massages.h">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Src/errors.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Shared/Src/massages.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/beteg.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/betegArray.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/gyogyszer.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/gyogyszerQueue.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/orvos.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/Src/orvosArray.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/main.c">
+			<Option target="HOSPITAL_PROJECT"/>
+		</Unit>
+		<Unit filename="C:/Users/arvai/OneDrive/Dokumentumok/GitHub/DSA_projekt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

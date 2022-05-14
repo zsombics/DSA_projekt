@@ -4,8 +4,9 @@
 
 #ifndef HOSPITAL_PROJECT_BETEGARRAY_H
 #define HOSPITAL_PROJECT_BETEGARRAY_H
-#include "beteg.h"
+
 #include <stdbool.h>
+#include "beteg.h"
 
 typedef struct {
     Patient **patients;

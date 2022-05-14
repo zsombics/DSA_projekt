@@ -9,9 +9,7 @@
 
 void createMedQueue(MedQueue **medQueue, unsigned int maxSize){
     (*medQueue) = malloc(sizeof(MedQueue));
-    //test
     (*medQueue)->Medicines = (malloc(maxSize * sizeof(Medicine *)));
-    //test
     (*medQueue)->size=maxSize;
     for(int i=0;i<maxSize;i++)
     {

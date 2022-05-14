@@ -71,7 +71,7 @@ void createPatient(Patient **patient) {
 
 void SetPatientData(Patient *patient, char *name, enum PatientType type,
                enum GenderTypePatient gender,
-               enum TypeOfIllness illness,enum IllnesSeriousness illnesSeriousness, StaffArray *S) {
+               enum TypeOfIllness illness,enum IllnesSeriousness illnesSeriousness, StaffArray *Saff) {
     strcpy(patient->name, name);
     patient->type = type;
     patient->gender = gender;
@@ -79,11 +79,10 @@ void SetPatientData(Patient *patient, char *name, enum PatientType type,
     patient->illnesSeriousness = illnesSeriousness;
     // Staff orvos
     for (int i = 0; i < staffposition; ++i) {
-        if ((S->staffs[i])->illness == patient->illness) {
-            patient->orvos=*(S->staffs[i]);
+        if ((Saff->staffs[i])->illness == patient->illness) {
+            patient->orvos=*(Saff->staffs[i]);
         }
     }
-    // queue
     for (int i = 0; i < 7; ++i) {
         enqueue(&(patient->medQueue), illnestomedicine(illness));
     }

@@ -5,7 +5,7 @@
 #ifndef HOSPITAL_PROJECT_GYOGYSZERQUEUE_H
 #define HOSPITAL_PROJECT_GYOGYSZERQUEUE_H
 #include "gyogyszer.h"
-
+#include <stdbool.h>
 typedef struct {
     Medicine **Medicines;
     int front;
