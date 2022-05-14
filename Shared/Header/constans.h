@@ -9,7 +9,7 @@
 #define MAX_Doctor 100
 static int numberOfStaff=0;
 static int numberOfPatient=0;
-static int numberOfMedicine=0;
+static int maxSize=7;
 static int staffposition=0;
 enum TypeOfIllness {
     BALESET,

@@ -5,6 +5,7 @@
 #include "../Headers/beteg.h"
 #include "../Shared/Header/errors.h"
 #include "../Shared/Header/constans.h"
+#include "../Headers/orvosArray.h"
 
 char *getPatient(enum PatientType type) {
     switch (type) {
@@ -68,14 +69,24 @@ void createPatient(Patient **patient) {
     (*patient)->id = ++numberOfPatient;
 }
 
-void
-SetPatientData(Patient *patient, char *name, enum PatientType type, enum GenderTypePatient gender,
-               enum TypeOfIllness illness, enum IllnesSeriousness illnesSeriousness,Staff orvos) {
+void SetPatientData(Patient *patient, char *name, enum PatientType type,
+               enum GenderTypePatient gender,
+               enum TypeOfIllness illness,enum IllnesSeriousness illnesSeriousness, StaffArray *S) {
     strcpy(patient->name, name);
     patient->type = type;
     patient->gender = gender;
     patient->illness = illness;
     patient->illnesSeriousness = illnesSeriousness;
+    // Staff orvos
+    for (int i = 0; i < staffposition; ++i) {
+        if ((S->staffs[i])->illness == patient->illness) {
+            patient->orvos=*(S->staffs[i]);
+        }
+    }
+    // queue
+    for (int i = 0; i < 7; ++i) {
+        enqueue(&(patient->medQueue), illnestomedicine(illness));
+    }
 }
 
 void printPatient(Patient *patient, char *destination) {

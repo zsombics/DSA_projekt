@@ -6,6 +6,7 @@
 #include "../../Headers/orvos.h"
 #include "../../Shared/Header/constans.h"
 #include "../../Headers/orvosArray.h"
+#include "../../Headers/betegArray.h"
 
 void SetUpStaffData(){
     StaffArray *staffArray;
@@ -35,5 +36,11 @@ void SetUpStaffData(){
     createStaff(&staff5);
     SetStaffData(staff5," Dr. Czink Elek ",RADIOLOGUS,TUDO_PROBLEMA,birthDate5);
     addNewStaff(&staffArray,staff5);
-    printStaffArray(&staffArray,CON);
+   // printStaffArray(&staffArray,CON);
+   PatientArray *patientArray;
+    createPatientArray(&patientArray,25);
+    Patient * patient1;
+    SetPatientData(&patient1,"Kantor Anna",GYEREK,FEMALE_,BALESET,INTENZIV,staffArray);
+    addNewPatient(&patientArray,patient1,1);
+    printPatientArray(patientArray,CON);
 }

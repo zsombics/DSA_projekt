@@ -54,3 +54,16 @@ void deleteMedicin(Medicine **medicine) {
     free(*medicine);
     (*medicine) = NULL;
 }
+Medicine *illnestomedicine(enum TypeOfIllness illness){
+    switch (illness) {
+        Medicine *baleset;
+        createMedicin(&baleset);
+        SetMedicinData(&baleset,INJEKCIO,ALTATO);
+        case BALESET:
+            return baleset;
+        default:
+           return  "UNDEFINED";
+
+    }
+
+}

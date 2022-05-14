@@ -8,6 +8,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "orvos.h"
+#include "gyogyszerQueue.h"
+#include "orvosArray.h"
 
 enum PatientType {
     FELNOTT,
@@ -34,6 +36,7 @@ typedef struct {
     enum TypeOfIllness illness;
     enum IllnesSeriousness illnesSeriousness;
     Staff orvos;
+    MedQueue medQueue;
 } Patient;
 
 char *getPatient(enum PatientType type);
@@ -51,8 +54,7 @@ void SetPatientData(Patient *patient,
                     enum PatientType type,
                     enum GenderTypePatient gender,
                     enum TypeOfIllness illness,
-                    enum IllnesSeriousness illnesSeriousness,
-                            Staff orvos
+                    enum IllnesSeriousness illnesSeriousness,StaffArray *S
 );
 
 void printPatient(Patient *patient, char *destination);

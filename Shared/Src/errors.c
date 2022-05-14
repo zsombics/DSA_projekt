@@ -28,9 +28,12 @@ void printDeleteMessage(enum DeleteType delete) {
     switch (delete) {
         case SUCCESSFUL_DELETION:
             printf(" \nSUCCESSFUL_DELETION ");
+            break;
         case UNSUCCESFUL_DELETION:
             printf(" \nUNSUCCESFUL_DELETION ");
+            break;
         default:
             printf(" \nUnderfined ");
+            break;
     }
 }

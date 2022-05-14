@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "../Shared/Header/constans.h"
 enum MedicineType {
     INJEKCIO,
     KAPSZULA
@@ -24,6 +24,7 @@ enum TypeOfMedicine {
 typedef struct {
     enum MedicineType type;
     enum TypeOfMedicine medicinetype;
+ //   enum TypeOfIllness illness;
 } Medicine;
 
 char *getMedicinetype(enum MedicineType type);
@@ -38,6 +39,6 @@ void SetMedicinData(Medicine *medicine,
 );
 
 void printMedicin(Medicine *medicine, char *destination);
-
 void deleteMedicin(Medicine **medicine);
+Medicine *illnestomedicine(enum TypeOfIllness illness);
 #endif //HOSPITAL_PROJECT_GYOGYSZER_H
