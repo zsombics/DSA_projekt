@@ -35,9 +35,10 @@ void deletePatientArray(PatientArray **patientArray) {
     }
 }
 
-bool addNewPatient(PatientArray *patientArray, Patient *newPatient, int position) {
-    if (patientArray != NULL && patientArray->maxPatient > position && position >= 0 && newPatient != NULL) {
-        patientArray->patients[position] = newPatient;
+bool addNewPatient(PatientArray *patientArray, Patient *newPatient) {
+    if (patientArray != NULL && patientArray->maxPatient >numberOfPatient && numberOfPatient >= 0 && newPatient != NULL) {
+        patientArray->patients[numberOfPatient] = newPatient;
+        numberOfPatient++;
         return true;
     }
     return false;
@@ -64,7 +65,7 @@ void readPatient(PatientArray *patientArray, char *from) {
         scanf("%i", &newPatient->gender);
         scanf("%i", &newPatient->illness);
         scanf("%i", &newPatient->illnesSeriousness);
-        addNewPatient(patientArray, newPatient, i);
+        addNewPatient(patientArray, newPatient);
     }
     freopen(CON, "r", stdin);
 }

@@ -16,7 +16,7 @@ void createStaffArray(StaffArray **staffArray, unsigned int maxDoctor);
 
 void deleteStaffArray(StaffArray **staffArray);
 
-bool addNewStaff(StaffArray *staffArray, Staff *newStaff,int staffposition);
+bool addNewStaff(StaffArray *staffArray, Staff *newStaff);
 
 Staff *getStaffAtPosition(StaffArray *staffArray, int position);
 

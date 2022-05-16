@@ -29,8 +29,12 @@ bool queueIsFull(MedQueue *medQueue){
 void enqueue(MedQueue *medQueue,Medicine *medicine){
     if(!queueIsFull(medQueue)){
         if(queueIsEmpty(medQueue)) medQueue->front++;
-        medQueue->rear++;
-        SetMedicinData(medQueue->Medicines[medQueue->rear],medicine->type,medicine->medicinetype);
+        printf("ok1");
+      //  SetMedicinData(medQueue->Medicines[medQueue->rear],medicine->type,medicine->medicinetype);
+//        printf("ok2");
+       medQueue->rear++;
+        medQueue->Medicines[medQueue->rear] = medicine;
+        printf("ok3");
     }
     else printErrorMessages(QUEUE_IS_FULL);
 }

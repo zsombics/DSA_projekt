@@ -17,7 +17,7 @@ void createPatientArray(PatientArray **patientArray, unsigned int maxPatient);
 
 void deletePatientArray(PatientArray **patientArray);
 
-bool addNewPatient(PatientArray *patientArray, Patient *newPatient, int position);
+bool addNewPatient(PatientArray *patientArray, Patient *newPatient);
 
 Patient *getPatientAtPosition(PatientArray *patientArray, int position);
 

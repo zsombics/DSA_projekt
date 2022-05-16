@@ -66,6 +66,8 @@ void createPatient(Patient **patient) {
     if (!(*patient)) {
         printErrorMessages(MEMORY_ALLOCATION);
     }
+    (*patient)->orvos = malloc(sizeof(Staff));
+    (*patient)->medQueue = malloc(sizeof(MedQueue));
     (*patient)->id = ++numberOfPatient;
 }
 
@@ -78,14 +80,17 @@ void SetPatientData(Patient *patient, char *name, enum PatientType type,
     patient->illness = illness;
     patient->illnesSeriousness = illnesSeriousness;
     // Staff orvos
-    for (int i = 0; i < staffposition; ++i) {
+    //printf("%i",staffposition);
+    for (int i = 0; i < 1; ++i) {
+
         if ((Saff->staffs[i])->illness == patient->illness) {
-            patient->orvos=*(Saff->staffs[i]);
+            patient->orvos=Saff->staffs[i];
         }
     }
+
     for (int i = 0; i < 7; ++i) {
-        enqueue(&(patient->medQueue), illnestomedicine(illness));
-    }
+        enqueue(patient->medQueue, illnestomedicine(illness));
+    }printf("ok0");
 }
 
 void printPatient(Patient *patient, char *destination) {

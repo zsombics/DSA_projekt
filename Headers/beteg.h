@@ -35,8 +35,8 @@ typedef struct {
     enum GenderTypePatient gender;
     enum TypeOfIllness illness;
     enum IllnesSeriousness illnesSeriousness;
-    Staff orvos;
-    MedQueue medQueue;
+    Staff *orvos;
+    MedQueue *medQueue;
 } Patient;
 
 char *getPatient(enum PatientType type);

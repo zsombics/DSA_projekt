@@ -56,14 +56,21 @@ void deleteMedicin(Medicine **medicine) {
 }
 Medicine *illnestomedicine(enum TypeOfIllness illness){
     switch (illness) {
-        Medicine *baleset;
-        createMedicin(&baleset);
-        SetMedicinData(&baleset,INJEKCIO,ALTATO);
-        case BALESET:
-            return baleset;
-        default:
-           return  "UNDEFINED";
+       case BALESET:
+           {   Medicine *baleset;
+               createMedicin(&baleset);
+               SetMedicinData(baleset,INJEKCIO,ALTATO);
+               return baleset;
+            }
+        case TUDO_PROBLEMA:
+        {   Medicine *tudo;
+            createMedicin(&tudo);
+            SetMedicinData(tudo,INJEKCIO,ALTATO);
+            return tudo;
+        }
+       default:
+           return  0;
 
-    }
+   }
 
 }

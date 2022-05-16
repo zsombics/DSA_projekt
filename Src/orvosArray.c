@@ -4,6 +4,7 @@
 
 #include "../Headers/orvosArray.h"
 #include "../Shared/Header/errors.h"
+//#include "../Shared/Header/constans.h"
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -35,7 +36,7 @@ void deleteStaffArray(StaffArray **staffArray) {
     }
 }
 
-bool addNewStaff(StaffArray *staffArray, Staff *newStaff,int staffposition) {
+bool addNewStaff(StaffArray *staffArray, Staff *newStaff) {
     if (staffArray != NULL && staffArray->maxDoctor > staffposition && staffposition >= 0 && newStaff != NULL) {
         staffArray->staffs[staffposition] = newStaff;
         staffposition++;
@@ -64,7 +65,7 @@ void readStaff(StaffArray *staffArray, char *from) {
         scanf("%i", &newStaff->specialization);
         scanf("%i", &newStaff->illness);
         scanf("%i%i%i\n", &newStaff->birthDate.year, &newStaff->birthDate.month, &newStaff->birthDate.day);
-        addNewStaff(staffArray, newStaff,i);
+        addNewStaff(staffArray, newStaff);
     }
     freopen(CON, "r", stdin);
 }
