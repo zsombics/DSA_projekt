@@ -76,8 +76,11 @@ void printPatientArray(PatientArray *patientArray, char *destination) {
     printf("ALL patients:\n");
     for (int i = 0; i < patientArray->maxPatient; ++i) {
         if (patientArray->patients[i] != NULL) {
+            printf("\nPatient %i:\n",i+1);
             printPatient(patientArray->patients[i], destination);
+            printqueue((patientArray->patients[i])->medQueue);
         }
     }
+
     freopen(CON, "w", stdin);
 }

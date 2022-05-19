@@ -44,6 +44,8 @@ void dequeue(MedQueue *medQueue){
    else printErrorMessages(QUEUE_IS_EMPTY);
 }
 void enqueuefull(MedQueue *medQueue,enum TypeOfIllness illness ){
+    medQueue->rear=6;
+    medQueue->front=0;
     for (int i = 0; i < 7; ++i) {
         enqueue(medQueue, illnestomedicine(illness));
     }
@@ -52,4 +54,9 @@ void deleteQueue(MedQueue **medQueue){
 
     free((*medQueue)->Medicines);
 
+}
+void printqueue(MedQueue *medQueue){
+    for (int i = medQueue->front; i < medQueue->rear; ++i) {
+        printf("Gyogyszer %i ",i+1);
+    }
 }

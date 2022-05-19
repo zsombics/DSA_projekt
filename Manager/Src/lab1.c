@@ -5,9 +5,6 @@
 #include "../Header/lab1.h"
 #include "../Header/menu1.h"
 
-#include <stdlib.h>
-#include <conio.h>
-
 void SetUpStaffData() {
     StaffArray *staffArray;
     createStaffArray(&staffArray, 30);
@@ -46,37 +43,52 @@ void SetUpStaffData() {
     createPatient(&patient1);
     SetPatientData(patient1, "Kantor Anna", GYEREK, FEMALE_, BALESET, INTENZIV, staffArray);
     addNewPatient(patientArray, patient1);
+    Patient *patient2;
+    createPatient(&patient2);
+    SetPatientData(patient2, "Kis Mihaly", FELNOTT, MALE_, ALLERGIA, INTENZIV, staffArray);
+    addNewPatient(patientArray, patient2);
     //printPatientArray(patientArray, CON);
-    printf("Udvozlunk a korhazban!\n Kerlek valaszd ki a muveletet, amit el szeretnel vegezni\n");
+    printf("              Udvozlunk a korhazban!\n"
+           "Kerlek valaszd ki a muveletet, amit el szeretnel vegezni\n");
     //szoveg
-    printf("Muveletek:\n");
+    printf("  Muveletek:\n");
     printf("1.Irasd ki a korhazi dolgozok(orvosok) listajat!\n");
     printf("2.Uj beteg hozzaadasa\n");
     printf("3.Napi gyogyszeradag beadasa\n");
     printf("4.Heti gyogyszeradag feltoltese\n");
     printf("0.Nem szeretnek tobb muveletet vegezni\n");
     int valtozo;
+    freopen(CON, "r", stdin);
     scanf("%d",&valtozo);
     while(valtozo!=0){
             if(valtozo==1){
-                menu1(staffArray,&valtozo);
-                printf("Szeretnel uj muveletet vegezni? Ha igen akkor nyomd meg az '1'-est, ha nem akkor '0'-t:");
+                menu1(staffArray);
+                printf("Szeretnel uj muveletet vegezni? Ha igen akkor melyiket? Ha nem akkor gepeld be a '0'-t:");
+                scanf("%i",&valtozo);
                 printf(" %i",valtozo);
             }
             if(valtozo==2){
                 Patient *patient;
                 createPatient(&patient);
                 char nev[20];
+                char knev[20];
+                freopen(CON, "r", stdin);
+                printf("Add meg a csalad nevet:");
                 scanf("%s",nev);
-                printf("Select a type:\n "
+                printf("\nAdd meg a vezetek nevet:");
+                scanf("%s",knev);
+                strcat(nev," ");
+                strcat(nev,knev);
+                printf("Select a type:\n"
                        "1.FELNOTT\n"
                        "2.GYEREK\n"
                        "3.IDOS\n");
                 int type;
+                freopen(CON, "r", stdin);
                 scanf("%i",&type);
-                printf("Select gender:  "
-                       "1.FEMALE_,"
-                       "2.MALE_");
+                printf("Select gender:  \n"
+                       "1.FEMALE,\n"
+                       "2.MALE\n");
                 int type1;
                 scanf("%i",&type1);
                 printf("Select illnes:"
@@ -84,35 +96,45 @@ void SetUpStaffData() {
                        "    2.TUDO_PROBLEMA,\n"
                        "    3.MENTALIS_PROBLEMA,\n"
                        "    4.SZIV_PROBLEMA,\n"
-                       "    5.ALLERGIA");
+                       "    5.ALLERGIA\n");
                 int type2;
                 scanf("%i",&type2);
                 printf("Select :"
-                       "   \n 1.SULYOS,\n"
-                       "    2.INTENZIV,\n"
-                       "    3.ENYHE");
+                       "\n1.SULYOS,\n"
+                       "2.INTENZIV,\n"
+                       "3.ENYHE\n");
                 int type3;
                 scanf("%i",&type3);
                 SetPatientData(patient, nev, type-1, type1-1, type2-1, type3-1, staffArray);
                 addNewPatient(patientArray, patient);
+                printf("Szeretnel uj muveletet vegezni? Ha igen akkor melyiket? Ha nem akkor gepeld be a '0'-t:");
+                freopen(CON, "r", stdin);
+                scanf("%d", &valtozo);
             }
         if(valtozo==3){
+            printf("%i",numberOfPatient);
                 for(int i=0;i<=numberOfPatient;i++){
                     dequeue(patientArray->patients[i]->medQueue);
                 }
+                 printf("Szeretnel uj muveletet vegezni? Ha igen akkor melyiket? Ha nem akkor gepeld be a '0'-t:");
+                  freopen(CON, "r", stdin);
+                  scanf("%d", &valtozo);
             }
         if(valtozo==4){
+            printf("%i",numberOfPatient);
                 for(int i=0;i<=numberOfPatient;i++){
                     enqueuefull(patientArray->patients[i]->medQueue,patientArray->patients[i]->illness);
                 }
+            printf("Szeretnel uj muveletet vegezni? Ha igen akkor melyiket? Ha nem akkor gepeld be a '0'-t:");
+            freopen(CON, "r", stdin);
+            scanf("%d", &valtozo);
             }
         if(valtozo==5){
                 printPatientArray(patientArray,CON);
-                printf("Szeretnel uj muveletet vegezni? Ha igen akkor nyomd meg az '1'-est, ha nem akkor '0'-t:");
-                getch();
+                printf("Szeretnel uj muveletet vegezni? Ha igen akkor melyiket? Ha nem akkor gepeld be a '0'-t:");
+                freopen(CON, "r", stdin);
                 scanf("%d", &valtozo);
             }
-        valtozo=0;
         }
 
 }

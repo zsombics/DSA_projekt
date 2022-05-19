@@ -87,19 +87,19 @@ void SetPatientData(Patient *patient, char *name, enum PatientType type,
         }
     }
 
-    for (int i = 0; i < 7; ++i) {
+    for (int i = 0; i < 8; ++i) {
         enqueue(patient->medQueue, illnestomedicine(illness));
     }
     numberOfPatient++;
 }
 
 void printPatient(Patient *patient, char *destination) {
-    printf("\nPatient ID:%i\n", patient->id);
+
     printf("%s\n", patient->name);
     printf("%s", getPatient(patient->type));
     printf("%s", getGenderTypePatient(patient->gender));
     printf("%s", getTypeOfIllness(patient->illness));
-    printf("%s", getIllnesSeriousness(patient->illnesSeriousness));
+    printf("%s\n", getIllnesSeriousness(patient->illnesSeriousness));
 }
 
 void deletePatient(Patient **patient) {

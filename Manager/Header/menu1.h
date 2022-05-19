@@ -8,4 +8,4 @@
 #define HOSPITAL_PROJECT_MENU1_H
 
 #endif //HOSPITAL_PROJECT_MENU1_H
-void menu1(StaffArray *staffArray, int *ok);
+void menu1(StaffArray *staffArray);
