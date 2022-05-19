@@ -3,7 +3,8 @@
 //
 
 #include "../Header/lab1.h"
-#include <stdio.h>
+#include "../Header/menu1.h"
+
 #include <stdlib.h>
 #include <conio.h>
 
@@ -53,19 +54,16 @@ void SetUpStaffData() {
     printf("2.Uj beteg hozzaadasa\n");
     printf("3.Napi gyogyszeradag beadasa\n");
     printf("4.Heti gyogyszeradag feltoltese\n");
+    printf("0.Nem szeretnek tobb muveletet vegezni\n");
     int valtozo;
     scanf("%d",&valtozo);
     while(valtozo!=0){
-        int ok;
-        switch (valtozo) {
-            case 1:{
-                printStaffArray(staffArray, CON);
+            if(valtozo==1){
+                menu1(staffArray,&valtozo);
                 printf("Szeretnel uj muveletet vegezni? Ha igen akkor nyomd meg az '1'-est, ha nem akkor '0'-t:");
-                getch();
-
-                break;
+                printf(" %i",valtozo);
             }
-            case 2:{
+            if(valtozo==2){
                 Patient *patient;
                 createPatient(&patient);
                 char nev[20];
@@ -97,31 +95,24 @@ void SetUpStaffData() {
                 scanf("%i",&type3);
                 SetPatientData(patient, nev, type-1, type1-1, type2-1, type3-1, staffArray);
                 addNewPatient(patientArray, patient);
-                break;
             }
-            case 3:{
+        if(valtozo==3){
                 for(int i=0;i<=numberOfPatient;i++){
                     dequeue(patientArray->patients[i]->medQueue);
                 }
-                break;
-
             }
-            case 4:{
+        if(valtozo==4){
                 for(int i=0;i<=numberOfPatient;i++){
                     enqueuefull(patientArray->patients[i]->medQueue,patientArray->patients[i]->illness);
                 }
-                break;
             }
-            case 5:{
+        if(valtozo==5){
                 printPatientArray(patientArray,CON);
                 printf("Szeretnel uj muveletet vegezni? Ha igen akkor nyomd meg az '1'-est, ha nem akkor '0'-t:");
                 getch();
-                scanf("%d", &ok);
+                scanf("%d", &valtozo);
             }
-            default:
-                "Helytelen begepeles";
+        valtozo=0;
         }
-        scanf("%d", &ok);
-        valtozo=ok;
-    }
+
 }

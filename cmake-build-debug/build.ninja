@@ -121,6 +121,18 @@ build CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszerQueue.c.obj: C_COMPILER__HOSP
   OBJECT_DIR = CMakeFiles\HOSPITAL_PROJECT.dir
   OBJECT_FILE_DIR = CMakeFiles\HOSPITAL_PROJECT.dir\Src
 
+build CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/menu1.c.obj: C_COMPILER__HOSPITAL_PROJECT_Debug C$:/Users/zsomb/CLionProjects/HOSPITAL_PROJECT/Manager/Src/menu1.c || cmake_object_order_depends_target_HOSPITAL_PROJECT
+  DEP_FILE = CMakeFiles\HOSPITAL_PROJECT.dir\Manager\Src\menu1.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\HOSPITAL_PROJECT.dir
+  OBJECT_FILE_DIR = CMakeFiles\HOSPITAL_PROJECT.dir\Manager\Src
+
+build CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/menu5.c.obj: C_COMPILER__HOSPITAL_PROJECT_Debug C$:/Users/zsomb/CLionProjects/HOSPITAL_PROJECT/Manager/Src/menu5.c || cmake_object_order_depends_target_HOSPITAL_PROJECT
+  DEP_FILE = CMakeFiles\HOSPITAL_PROJECT.dir\Manager\Src\menu5.c.obj.d
+  FLAGS = -g -std=gnu11
+  OBJECT_DIR = CMakeFiles\HOSPITAL_PROJECT.dir
+  OBJECT_FILE_DIR = CMakeFiles\HOSPITAL_PROJECT.dir\Manager\Src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target HOSPITAL_PROJECT
@@ -129,7 +141,7 @@ build CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszerQueue.c.obj: C_COMPILER__HOSP
 #############################################
 # Link the executable HOSPITAL_PROJECT.exe
 
-build HOSPITAL_PROJECT.exe: C_EXECUTABLE_LINKER__HOSPITAL_PROJECT_Debug CMakeFiles/HOSPITAL_PROJECT.dir/main.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/orvos.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/beteg.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszer.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Shared/Src/errors.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Shared/Src/massages.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/orvosArray.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/betegArray.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/lab1.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/lab2.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/Labmanager.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszerQueue.c.obj
+build HOSPITAL_PROJECT.exe: C_EXECUTABLE_LINKER__HOSPITAL_PROJECT_Debug CMakeFiles/HOSPITAL_PROJECT.dir/main.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/orvos.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/beteg.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszer.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Shared/Src/errors.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Shared/Src/massages.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/orvosArray.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/betegArray.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/lab1.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/lab2.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/Labmanager.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Src/gyogyszerQueue.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/menu1.c.obj CMakeFiles/HOSPITAL_PROJECT.dir/Manager/Src/menu5.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\HOSPITAL_PROJECT.dir
