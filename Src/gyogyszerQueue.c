@@ -29,12 +29,10 @@ bool queueIsFull(MedQueue *medQueue){
 void enqueue(MedQueue *medQueue,Medicine *medicine){
     if(!queueIsFull(medQueue)){
         if(queueIsEmpty(medQueue)) medQueue->front++;
-        printf("ok1");
       //  SetMedicinData(medQueue->Medicines[medQueue->rear],medicine->type,medicine->medicinetype);
 //        printf("ok2");
        medQueue->rear++;
         medQueue->Medicines[medQueue->rear] = medicine;
-        printf("ok3");
     }
     else printErrorMessages(QUEUE_IS_FULL);
 }
@@ -44,6 +42,11 @@ void dequeue(MedQueue *medQueue){
         medQueue->front++;
     }
    else printErrorMessages(QUEUE_IS_EMPTY);
+}
+void enqueuefull(MedQueue *medQueue,enum TypeOfIllness illness ){
+    for (int i = 0; i < 7; ++i) {
+        enqueue(medQueue, illnestomedicine(illness));
+    }
 }
 void deleteQueue(MedQueue **medQueue){
 

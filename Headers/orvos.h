@@ -18,7 +18,7 @@ enum SpecializationType {
     PATOLOGUS,
     SZEMESZ,
     ONKOLOGUS,
-    SZULESZ,
+    NOGYOGYASZ,
     HAZIORVOS,
     FUL_ORR_GEGESZ,
     BORGYOGYASZ,

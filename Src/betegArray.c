@@ -68,6 +68,7 @@ void readPatient(PatientArray *patientArray, char *from) {
         addNewPatient(patientArray, newPatient);
     }
     freopen(CON, "r", stdin);
+
 }
 
 void printPatientArray(PatientArray *patientArray, char *destination) {

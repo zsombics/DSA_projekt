@@ -24,8 +24,8 @@ char *getSpecializationType(enum SpecializationType specialization) {
             return " SZEMESZ ";
         case ONKOLOGUS:
             return " ONKOLOGUS ";
-        case SZULESZ:
-            return " SZULESZNO ";
+        case NOGYOGYASZ:
+            return " NOGYOGYASZ ";
         case HAZIORVOS:
             return " HAZIORVOS ";
         case FUL_ORR_GEGESZ:

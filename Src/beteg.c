@@ -82,7 +82,6 @@ void SetPatientData(Patient *patient, char *name, enum PatientType type,
     patient->illnesSeriousness = illnesSeriousness;
     // Staff orvos
     for (int i = 0; i <staffposition; ++i) {
-
         if ((Saff->staffs[i])->illness == patient->illness) {
             patient->orvos=Saff->staffs[i];
         }
@@ -91,6 +90,7 @@ void SetPatientData(Patient *patient, char *name, enum PatientType type,
     for (int i = 0; i < 7; ++i) {
         enqueue(patient->medQueue, illnestomedicine(illness));
     }
+    numberOfPatient++;
 }
 
 void printPatient(Patient *patient, char *destination) {
