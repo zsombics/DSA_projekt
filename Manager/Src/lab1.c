@@ -54,17 +54,15 @@ void SetUpStaffData() {
     printf("3.Napi gyogyszeradag beadasa\n");
     printf("4.Heti gyogyszeradag feltoltese\n");
     int valtozo;
+    scanf("%d",&valtozo);
     while(valtozo!=0){
         int ok;
-        scanf("%i",&ok);
-        system("CLS");
-        valtozo=ok;
         switch (valtozo) {
             case 1:{
                 printStaffArray(staffArray, CON);
                 printf("Szeretnel uj muveletet vegezni? Ha igen akkor nyomd meg az '1'-est, ha nem akkor '0'-t:");
                 getch();
-                scanf("%d", &ok);
+
                 break;
             }
             case 2:{
@@ -123,6 +121,7 @@ void SetUpStaffData() {
             default:
                 "Helytelen begepeles";
         }
+        scanf("%d", &ok);
         valtozo=ok;
     }
 }
